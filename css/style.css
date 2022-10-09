@@ -137,13 +137,17 @@ header img {
 
 /*Features Card*/
 
+.features__container {
+  width: 100%;
+}
+
 .features {
   display: flex;
-  margin: 10rem 0;
+  margin: 10rem auto;
 }
 
 .features__card {
-  width: 100%;
+  width: 20%;
   margin: 4rem 4rem;
   background-color: #edfeeb;
   overflow: hidden;
@@ -171,6 +175,10 @@ header img {
 
 .services {
   display: flex;
+}
+
+.services__h1 {
+  font-size: 55px;
 }
 
 .services__card {
@@ -283,14 +291,18 @@ header img {
 
 /*Director Card*/
 
+.director__container {
+  padding-bottom: 150px;
+}
+
 .director__card {
   background-color: #fff;
   width: 70%;
   display: flex;
-  margin: 2.5rem auto 6rem auto;
   align-items: center;
   box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.35);
   border-radius: 42px;
+  margin: 2.5rem auto 6rem auto;
 }
 
 .director__title {
@@ -299,6 +311,7 @@ header img {
   color: #228c40;
   font-size: 54px;
   font-weight: 600;
+  text-align: center;
 }
 
 .director__card__text {
@@ -378,6 +391,18 @@ footer h4 {
 }
 
 @media (max-width: 768px) {
+  footer {
+    background-color: #e2ffdf;
+  }
+  footer h4 {
+    color: #228c40;
+  }
+  footer p {
+    color: #228c40;
+  }
+  footer .consultasTrat p {
+    color: #000000;
+  }
   .logoDesktop {
     display: none;
   }
@@ -399,11 +424,27 @@ footer h4 {
   .sendcv__h3 {
     margin: 0 20px 30px 20px;
   }
+  .services__title h2 {
+    font-size: 30px;
+  }
   .reviews__text {
     text-align: center;
   }
+  .director__card {
+    padding: 50px;
+  }
   .director__title {
     text-align: center;
+    font-size: 30px;
+  }
+  .reviews__card__element {
+    margin: 1rem;
+  }
+  .reviews__text__h2 {
+    font-size: 30px;
+  }
+  .features__card {
+    width: 100%;
   }
 }
 
