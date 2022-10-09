@@ -304,6 +304,14 @@ header img {
   border-radius: 42px;
   margin: 2.5rem auto 6rem auto;
 }
+.director__card__img {
+  margin: -8px 0 -13px -15px;
+}
+.director__card__text__center {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
 
 .director__title {
   width: 90%;
@@ -312,10 +320,6 @@ header img {
   font-size: 54px;
   font-weight: 600;
   text-align: center;
-}
-
-.director__card__text {
-  margin: 0rem 2rem;
 }
 
 .director__card__text__role {
@@ -436,6 +440,16 @@ footer h4 {
   .director__title {
     text-align: center;
     font-size: 30px;
+  }
+  .director__card__img {
+    text-align: center;
+  }
+  .director__card__img img {
+    border-radius: 40px;
+    width: 120px;
+  }
+  .director__card__text {
+    margin: 0;
   }
   .reviews__card__element {
     margin: 1rem;
