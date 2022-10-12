@@ -479,7 +479,7 @@ footer h4 {
   margin: 0;
   padding: 0;
   transition: transform 1s ease;
-  width: 800px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -529,6 +529,10 @@ footer h4 {
   padding: 0;
 }
 
+.col-md-8 {
+  padding-left: 0;
+}
+
 .card__quienesSomos {
   border-radius: 48px 0 0 48px;
 }
@@ -546,4 +550,8 @@ footer h4 {
 
 .card__quienesSomos__text ul li::marker {
   color: #228c40;
+}
+
+.card__quienesSomos__text ul li p {
+  font-size: 1.2em;
 }
