@@ -20,7 +20,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="glider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <header>
+    <!-- <header>
       <nav>
         <img src="assets/img/logo resiliencia transparente.png" alt="" />
         <ul class="ul-nav">
@@ -41,6 +41,36 @@
             >
           </li>
         </ul>
+      </nav>
+    </header> -->
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-nav" aria-label="navbar">
+        <div class="container-fluid">
+          <img src="assets/img/logo resiliencia transparente.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-2">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a href="services2.html" class="nav-link">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a href="about-me.html" class="nav-link active">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
       </nav>
     </header>
 
@@ -97,7 +127,7 @@
       </section>
 
 
-      <section>
+      <!-- <section>
         <div class="about-us">
           <div class="about-us__img">
             <img src="assets/img/kind-doctor.png" alt="doctor amable">
@@ -109,12 +139,12 @@
             <h3 class="about-us__h3"></h3>
           </div>
         </div>
-      </section>
+      </section> -->
 
 
 
 
-      <div class="services__title">
+      <!-- <div class="services__title">
         <h2 class="services__h1" style="text-align:center; color: #228C40; font-size: 55px;">Nuestros servicios</h2>
         <h3 class="services__h3" style="text-align: center; ">Profesionales que te acompañaran paso a paso</h3>
       </div>
@@ -145,7 +175,61 @@
                 <p>Brindamos servicios de atención domiciliaria, que se adecuan a las necesidades particulares de cada paciente.</p>
             </div>
         </div>
-      </section>
+      </section> -->
+
+
+    
+
+        <div class="contenedor">
+
+          <div class="carousel">
+            <div class="carousel__contenedor">
+              <button aria-label="Anterior" class="carousel__anterior">
+              </button>
+      
+              <div class="carousel__lista">
+                <div class="services__card">
+                  <img src="assets/img/heart-rate 1.png" alt="" class="img-fluid">
+                    <figure>CUIDADORES</figure>
+                    <p>Brindamos servicios de atención domiciliaria, que se adecuan a las necesidades particulares de cada paciente.</p>
+                  </div>
+            
+                  <div class="services__card">
+                  <img src="assets/img/blood-pressure-gauge.png" alt="" class="img-fluid">
+                    <figure>ACOMPAÑANTES</figure>
+                    <p>Brindamos servicios de atención domiciliaria, que se adecuan a las necesidades particulares de cada paciente.</p>
+                  </div>
+            
+                  <div class="services__card">
+                  <img src="assets/img/medical-tools.png" alt="" class="img-fluid">
+                    <figure>ENFERMEROS</figure>
+                    <p>Brindamos servicios de atención domiciliaria, que se adecuan a las necesidades particulares de cada paciente.</p>
+                  </div>
+      
+                  <div class="services__card">
+                  <img src="assets/img/x-ray.png" alt="" class="img-fluid">
+                    <figure>PSICÓLOGOS</figure>
+                    <p>Brindamos servicios de atención domiciliaria, que se adecuan a las necesidades particulares de cada paciente.</p>
+                  </div>
+      
+                  
+                </div>
+              </div>
+      
+              <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+      
+            <div role="tablist" class="carousel__indicadores"></div>
+          </div>
+        </div>
+
+
+
+    
+
+
 
 
       <section>
@@ -196,6 +280,42 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="reviews__card__element__name">
+                Ivan Torres
+              </h2>
+              <h4 class="reviews__card__element__service">
+                Servicio de pedadogía.
+              </h4>
+            </div>
+
+            <!-- <div class="reviews__card__element">
+              <h3 class="reviews__card__element__comment">
+                “Sin duda el servicio de Resiliencia Activa es el mejor de la zona! Lo elegiría siempre.”
+              </h3>
+              <div class="reviews__card__element__stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="reviews__card__element__name">
+                Ivan Torres
+              </h2>
+              <h4 class="reviews__card__element__service">
+                Servicio de pedadogía.
+              </h4>
+            </div>
+
+            <div class="reviews__card__element">
+              <h3 class="reviews__card__element__comment">
+                “Sin duda el servicio de Resiliencia Activa es el mejor de la zona! Lo elegiría siempre.”
+              </h3>
+              <div class="reviews__card__element__stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
               <h2 class="reviews__card__element__name">
@@ -204,7 +324,7 @@
               <h4 class="reviews__card__element__service">
                 Servicio de kineseología para su madre Marta.
               </h4>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -273,9 +393,9 @@
       crossorigin="anonymous"
     ></script>
   </body>
-
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="glider.js"></script>
+  <script src="app.js"></script>
   <script>
     AOS.init();
   </script>

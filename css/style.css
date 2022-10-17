@@ -10,6 +10,10 @@
   }
   /*Nav*/
 
+  .bg-nav{
+    background-color: #43D26C;
+  }
+
 nav{
     background-color: #EDFEEB;
     display: flex;
@@ -180,7 +184,7 @@ header img {
   }
 
 
-  /*Services Card*/
+   /* Services Card */
 
   .services {
     display: flex;
@@ -211,7 +215,93 @@ header img {
   .services__card p{
     text-align: center;
     margin: 0 3rem 3rem 3rem;
+  } 
+
+
+
+  .contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
   }
+  
+  /* --- --- CONTENEDOR PRINCIPAL --- --- */
+  
+  
+  /* --- --- CAROUSEL --- --- */
+  .carousel__contenedor {
+    position: relative;
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover {
+    opacity: 100%;
+  }
+  
+  .carousel__anterior {
+    left: -30px;
+  }
+  
+  .carousel__siguiente {
+    right: -30px;
+  }
+  
+  .carousel__lista {
+    overflow: hidden;
+  }
+  
+  .carousel__elemento {
+    text-align: center;
+  }
+  
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    opacity: .2;
+    border-radius: 0;
+    background-color: #115e08;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      padding: 40px 0;
+    }
+  
+    .contenido-principal {
+      flex-direction: column;
+    }
+  
+    .contenido-principal > * {
+      width: 100%;
+    }
+  }
+
+
+
 
 
 
@@ -257,6 +347,7 @@ header img {
   /*Reviews*/
 
   .reviews__card{
+    display: flex;
     margin: 4rem 0;
     justify-content: center;
     align-items: center;
@@ -288,7 +379,7 @@ header img {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    margin:  6rem;
+    margin:  6rem 1rem;
     padding: 4rem 4rem;
     border-radius: 2rem;
     box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.35);
