@@ -14,8 +14,8 @@ window.addEventListener('load', function(){
 			  breakpoint: 710,
 			  draggable: true,
 			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 2,
+				slidesToScroll: 1,
 			  }
 			},{
 			  // screens greater than >= 1024px
@@ -32,8 +32,8 @@ window.addEventListener('load', function(){
 			  breakpoint: 1310,
 			  draggable: true,
 			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 2
+				slidesToShow: 4,
+				slidesToScroll: 1
 			  }
 			}
 		]

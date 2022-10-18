@@ -296,7 +296,7 @@ header img {
 
 @media screen and (max-width: 800px){
   .services__card{
-    width: 18% !important
+    width: 70% !important;
   }
   .services__card figure {
     margin: 0;
@@ -720,6 +720,11 @@ footer h4 {
   .card__quienesSomos__text ul li p {
     font-size: 14px;
   }
+
+
+
+
+  
   .heroContainer img {
     width: 100%;
     margin-top: 10px;
