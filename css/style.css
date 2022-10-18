@@ -132,7 +132,7 @@ header img {
 .heroContainer .img {
   width: 100%;
   height: 850px;
-  background-image: url(../assets/img/heroimage.png);
+  background-image: url(/assets/img/hero_image1.0.webp);
   background-repeat: no-repeat;
   background-size: 1440px 1000px;
   background-position-x: 250px;
@@ -209,28 +209,7 @@ header img {
   max-width: 177px;
 }
 
-/*Services Card*/
 
-.services {
-  display: flex;
-}
-
-.services__h1 {
-  font-size: 55px;
-}
-
-.services__card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 4rem 1rem;
-  background-color: #fff;
-  overflow: hidden;
-  padding: 0 10px;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 42px;
-  transition: all 0.3s;
-}
 
 /*Mod bootstrap*/
 .card {
@@ -296,6 +275,7 @@ header img {
 
 .services__card figure {
   text-align: center;
+  color: #228C40;
   margin-top: 4rem;
   font-weight: bolder;
   font-size: 1.7rem;
@@ -310,6 +290,23 @@ header img {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .services__card{
+    width: 18% !important
+  }
+  .services__card figure {
+    margin: 0;
+    font-weight: 600;
+  }
+  .services__card img{
+    display: flex;
+    width: 200px;
+    margin : 0 auto;
+  }
 }
 
 /* --- --- CONTENEDOR PRINCIPAL --- --- */
@@ -355,7 +352,7 @@ header img {
   text-align: center;
 }
 
-.carousel__indicadores .glider-dot {
+.carousel__indicadores .glider-dot , .reviews__indicadores .glider-dot{
   display: block;
   width: 30px;
   height: 4px;
@@ -364,11 +361,11 @@ header img {
   background-color: #115e08;
 }
 
-.carousel__indicadores .glider-dot:hover {
+.carousel__indicadores .glider-dot:hover , .reviews__indicadores .glider-dot:hover {
   opacity: 0.5;
 }
 
-.carousel__indicadores .glider-dot.active {
+.carousel__indicadores .glider-dot.active , .reviews__indicadores .glider-dot.active{
   opacity: 1;
 }
 
