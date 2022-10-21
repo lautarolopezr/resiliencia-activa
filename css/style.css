@@ -10,6 +10,17 @@ main {
 }
 
 /*Div first*/
+header img {
+  width: 89px;
+  height: 81px;
+  left: 63px;
+  top: 66px;
+}
+
+header img:hover {
+  border-radius: 8px;
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.35));
+}
 
 .redesHeader {
   height: 60px;
@@ -23,18 +34,22 @@ main {
 }
 
 .redesHeader .span {
-  padding-left: 52px;
+  padding-left: 44px;
 }
-.redesHeader i {
-  font-size: 24px;
+.redesHeader img {
+  height: 28px;
+  left: 0;
+  top: 0;
+  width: auto;
+  margin-left: 0;
 }
 
 .redesHeaderMobile a {
   color: #3a8532;
 }
 
-.redesHeader i:hover {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+.redesHeader a:hover {
+  text-shadow: 10px 10px 1px #000;
 }
 
 /*NavBar bootstrap*/
@@ -49,6 +64,7 @@ nav img {
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-left: 18px;
+  font-weight: 500;
 }
 
 .navbar-nav {
@@ -62,15 +78,8 @@ nav img {
 }
 
 .nav-link:hover {
-  text-shadow: 0px 4px 5px rgba(34, 140, 64, 0.25);
+  text-shadow: 2px 2px 10px rgba(34, 140, 64, 0.8);
   color: #228c40;
-}
-
-header img {
-  width: 89px;
-  height: 81px;
-  left: 63px;
-  top: 66px;
 }
 
 .book {
@@ -151,6 +160,7 @@ header img {
   font-weight: 500;
   font-size: 20px;
   border: none;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
 }
 
 .heroBlur {
@@ -198,6 +208,7 @@ header img {
   line-height: 120%;
   font-size: 24px;
   text-align: center;
+  overflow-wrap: normal;
 }
 
 .features__card p {
@@ -228,7 +239,7 @@ header img {
 }
 
 .card__quienesSomos {
-  border-radius: 48px 0 0 48px;
+  border-radius: 48px 0 0 48px !important;
 }
 
 .card__quienesSomos__text {
@@ -240,6 +251,7 @@ header img {
   color: #228c40;
   text-align: center;
   font-size: 55px;
+  margin-bottom: 40px;
 }
 
 .card__quienesSomos__text ul li::marker {
@@ -273,7 +285,6 @@ header img {
 
 .services__card figure {
   text-align: center;
-  color: #228c40;
   margin-top: 10px;
   font-weight: bolder;
   font-size: 1.7rem;
@@ -479,7 +490,7 @@ header img {
   justify-content: center;
   background-color: #fff;
   margin: 6rem;
-  padding: 4rem 4rem;
+  padding: 3rem 3rem;
   border-radius: 2rem;
   box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.35);
 }
@@ -514,6 +525,7 @@ header img {
   display: flex;
   align-content: center;
   align-items: center;
+  padding: 36px 70px 36px 70px;
 }
 
 .director__title {
@@ -521,7 +533,7 @@ header img {
   margin: 0 auto;
   color: #228c40;
   font-size: 54px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -530,6 +542,7 @@ header img {
   font-weight: 400;
   color: #228c40;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .director__card__text__description {
@@ -544,10 +557,12 @@ footer {
   width: 100%;
   background: #b7feaf;
   padding-top: 80px;
+  padding-bottom: 10px;
 }
 
 footer p {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 footer i {
@@ -559,13 +574,18 @@ footer h4 {
   color: #062003;
 }
 
+.redesFooter img {
+  height: 28px;
+  margin-right: 13px;
+}
+
 .logo {
   grid-area: logo;
 }
 
 .logo img {
   width: 258px;
-  height: 258px;
+  height: 245px;
 }
 
 .fb {
@@ -600,11 +620,12 @@ footer h4 {
 @media (max-width: 768px) {
   header img {
     width: 51px;
-    height: 54px;
+    height: 50px;
   }
   footer {
     background-color: #e2ffdf;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   footer h4 {
     color: #228c40;
@@ -629,11 +650,12 @@ footer h4 {
   .redesCont {
     margin-left: 70px;
   }
-  .redesCont i {
-    font-size: 18px;
+  .redesCont img {
+    height: 18px;
   }
   .redesCont p {
     font-size: 12px;
+    margin-left: 17px;
   }
   .services__h1 {
     margin-top: 80px;
@@ -681,6 +703,9 @@ footer h4 {
   .director__card__text {
     margin: 0;
   }
+  .director__card__text__center {
+    padding: 10px;
+  }
   .reviews__card__element {
     margin: 1rem;
     padding: 1rem;
@@ -717,9 +742,10 @@ footer h4 {
   .navbar-nav {
     place-items: self-end;
   }
-  .centerIcon i {
-    margin-left: 20px;
-    margin-right: 20px;
+  .centerIcon img {
+    height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -736,7 +762,7 @@ footer h4 {
   }
   .logo img {
     width: 121px;
-    height: 127px;
+    height: 110px;
   }
   .card__quienesSomos__text h2 {
     font-size: 20px;
@@ -833,19 +859,18 @@ footer h4 {
   }
   .reviews__card__element {
     width: 640px !important;
-    margin: 64px 0px 64px 64px;
+    margin: 10px 0px 15px 60px;
   }
   .reviews__card__element__comment {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .reviews__card__element__name {
     font-size: 20px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .reviews__card__element__service {
     font-size: 12px;
-    margin-top: 16px;
   }
 }
 
@@ -917,4 +942,8 @@ div#close {
 
 button:hover {
   box-shadow: 3px 5px 16px rgba(0, 0, 0, 0.5);
+}
+
+.glider-track {
+  width: 2200px !important;
 }
