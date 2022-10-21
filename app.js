@@ -1,28 +1,29 @@
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__lista'), {
-		slidesToShow: 1,
+		draggable : true,
+		slidesToShow: 1.1,
 		slidesToScroll: 1,
-    	draggable: true,
 		dots: '.carousel__indicadores',
 		arrows: {
 			prev: '.carousel__anterior',
 			next: '.carousel__siguiente'
 		},
+		draggable: true,
 		responsive: [
 			{
 			  // screens greater than >= 775px
-			  breakpoint: 710,
+			  breakpoint: 500,
 			  draggable: true,
 			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1,
+				slidesToShow: 4,
+				slidesToScroll: 4	,
 			  }
 			},{
 			  // screens greater than >= 1024px
-			  breakpoint: 800,
+			  breakpoint: 501,
 			  draggable: true,
 			  settings: {
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 2
 			  }
 			}
